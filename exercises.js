@@ -91,7 +91,7 @@ function mustBeTrue(boo){
   if(boo === true)
     return true
 } 
-console.log(mustBeTrue(false));
+console.log(mustBeTrue(true));
 
 /*
  * #5
@@ -105,7 +105,11 @@ console.log(mustBeTrue(false));
  * Console.log your result.
 */
 
-
+function bigBird(word){
+  if(word.length > 3)
+    return "Word to Big Bird!"
+}
+console.log(bigBird("asdf"));
 
 /*
  * #6
