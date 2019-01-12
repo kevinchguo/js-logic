@@ -69,11 +69,12 @@ console.log(login("test1234"));
 function isGreaterThan(first, second){
   if(first > second)
     return true
-  else
-    return false
+  // else
+  //   return false
 
 }
-console.log(isGreaterThan(1,2));
+console.log(isGreaterThan(3,2));
+
 /*
  * #4
  * Function - mustBeTrue
@@ -86,7 +87,11 @@ console.log(isGreaterThan(1,2));
  * Console.log your result.
 */
 
-
+function mustBeTrue(boo){
+  if(boo === true)
+    return true
+} 
+console.log(mustBeTrue(false));
 
 /*
  * #5
