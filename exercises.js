@@ -167,7 +167,14 @@ console.log(notEqual('bye','bye'));
  * Console.log your result.
 */ 
 
-
+function spareChange(money){
+  if(money > 100){
+    return true
+  }else{
+    return false
+  }
+}
+console.log(spareChange(109));
 
 /*
  * #9
@@ -183,7 +190,15 @@ console.log(notEqual('bye','bye'));
  * Console.log your result.
 */ 
 
-
+function dirty30(one, two, three){
+  var sum = one + two + three;
+  if(sum > 30){
+    return true
+  }else{
+    return false
+  }
+}
+console.log(dirty30(9,1,21,))
 
 /*
  * #10
