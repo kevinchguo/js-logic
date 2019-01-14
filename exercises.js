@@ -234,6 +234,14 @@ console.log(evenStevens(42));
  * Console.log your result.
 */ 
 
+function daClub(cover, age){
+  if(cover >= 21 && age >= 21){
+    return 'Welcome to the Legends Lounge.'
+  }else{
+    return 'Chuck E Cheese is across the street.'
+  }
+}
+console.log(daClub(22, 20));
 
 /*
  * #12
@@ -248,8 +256,14 @@ console.log(evenStevens(42));
  * Console.log your result.
 */ 
 
-
-
+function graduation(credit, thesis){
+  if(credit >= 120 || thesis >= 120){
+    return 'Congratulations on a job well done.'
+  }else{
+    return 'See you in summer school.'
+  }
+}
+console.log(graduation(110, 110));
 /*
  * #13
  * Function - moneyTrain
