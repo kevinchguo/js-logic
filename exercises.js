@@ -125,12 +125,14 @@ console.log(bigBird("asdf"));
 */
 
 function isEqual(first, second){
- if(first === second)
+ if(first === second){
   return "You look mahvelous!"
-else
+ }else{
   return "I don't know who you are anymore."
+ }
 }
 console.log(isEqual('asdf','asf'));
+
 /*
  * #7
  * Function - notEqual
@@ -144,6 +146,14 @@ console.log(isEqual('asdf','asf'));
  * Console.log your result.
 */
 
+function notEqual(first, second){
+  if(first !== second){
+    return "Opposites do attract."
+  }else{
+    return "Cause it's like you're my mirror."
+  }
+}
+console.log(notEqual('bye','bye'));
 
 /*
  * #8
