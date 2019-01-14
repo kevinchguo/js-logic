@@ -264,6 +264,7 @@ function graduation(credit, thesis){
   }
 }
 console.log(graduation(110, 110));
+console.log("forgot to push #11")
 /*
  * #13
  * Function - moneyTrain
