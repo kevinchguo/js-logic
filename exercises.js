@@ -257,13 +257,13 @@ console.log(daClub(22, 20));
 */ 
 
 function graduation(credit, thesis){
-  if(credit >= 120 || thesis >= 120){
+  if(credit >= 120 || thesis === true){
     return 'Congratulations on a job well done.'
   }else{
     return 'See you in summer school.'
   }
 }
-console.log(graduation(110, 110));
+console.log(graduation(110, true));
 console.log("forgot to push #11")
 /*
  * #13
@@ -342,9 +342,6 @@ function dailySpecials(special){
     case 'Sunday':
       return 'BBQ Chicken Plate'
       break;
-    default:
-      return 'Rice'
-    
   }
 }
 console.log(dailySpecials(''))
@@ -386,6 +383,10 @@ for (var i = 1; i <= 5; i++){
 */
   var myFavFoods = ["lemon bar", "carrot cake", "nachos", "bacon cheeseburger", "ramen", "sweet potato fries", "chimichanga"];
 
+  for(var i = 0; i<myFavFoods.length; i++){
+    console.log(myFavFoods[i])
+  }
+
 
 /*
  * #17
@@ -402,8 +403,14 @@ for (var i = 1; i <= 5; i++){
  * Console.log your result.
 */
 
+var numArray = [1, 2, 3, 4, 5];
+var total = 0;
 
-
+function sumItUp(arr){
+  for(var i = 0; i<numArray.length; i + numArray){
+  }
+}
+//console.log(sumItUp())
 /*
  * #18
  * Function - allStars
