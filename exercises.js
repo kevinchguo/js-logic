@@ -307,7 +307,8 @@ var doughnutPrice = 4;
 var doughnutBought = 0;
 
 function buyDoughnut(){
-  return budget -= doughnutPrice, doughnutBought++
+  if(budget >= doughnutPrice) //check to see if enough money
+  return budget -= doughnutPrice, doughnutBought++;
 
 }
 buyDoughnut()
@@ -322,29 +323,29 @@ Inside the function, create a switch statement that will check the daily special
 function dailySpecials(special){
   switch(special) {
     case 'Monday':
-      return 'Char Siu Fried Rice'
+      menu = 'Char Siu Fried Rice'
       break;
     case 'Tuesday':
-      return 'Beef Chow Funn'
+      menu = 'Beef Chow Funn'
       break;
     case 'Wednesday':
-      return 'Sushi'
+      menu = 'Sushi'
       break;
     case 'Thursday':
-      return 'Pizza'
+      menu = 'Pizza'
       break;
     case 'Friday':
-      return 'Spaghetti'
+      menu = 'Spaghetti'
       break;
     case 'Saturday':
-      return 'Burgers'
+      menu = 'Burgers'
       break;
     case 'Sunday':
-      return 'BBQ Chicken Plate'
+      menu = 'BBQ Chicken Plate'
       break;
   }
 }
-console.log(dailySpecials(''))
+console.log(dailySpecials('Wednesday'));
 
 /*
 For loops - A for loop checks a condition a specific number of times and allows us to execute a code block and evaluate a condition to determine if our loop should run again.
@@ -405,12 +406,17 @@ for (var i = 1; i <= 5; i++){
 
 var numArray = [1, 2, 3, 4, 5];
 var total = 0;
+var array2 = [1,3,4,5,1,6,3,2,1];
 
 function sumItUp(arr){
-  for(var i = 0; i<numArray.length; i + numArray){
+  for(var i = 0; i<arr.length; i++){
+  total += arr[i]
   }
+  return total
 }
-//console.log(sumItUp())
+
+console.log(sumItUp(array2))
+
 /*
  * #18
  * Function - allStars
@@ -424,6 +430,23 @@ function sumItUp(arr){
 */ 
 
 var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Sidney Deane", "World B Free"];
+
+var west = [];
+var east = [];
+
+function allStars(ballers){
+  for(i = 0; i < ballers.length; i++){
+    if(i%2 === 1){
+      east.push(ballers[i])
+    }else{
+      west.push(ballers[i])
+    }
+  }
+  return ballers
+}
+allStars(players);
+console.log(west)
+console.log(east)
 /*
  * #19
  * Function - subways
@@ -438,6 +461,14 @@ var players = ["Yao Ming", "BrookLin", " Jesus Shuttlesworth", "Manute Bol", "Si
 
   var subOftheDay = ["Teriyaki Chicken", "Spicy Italian", "Turkey", "BMT", "Black Forest Ham", "Meatball Marinara", "Veggie"];
 
+function subways(special){
+  for(i = 0; i < special.length; i++)
+    if(i%2 === 0){
+      return special
+    }
+}
+subways(subOftheDay);
+console.log(subOftheDay)
 
 /*
 Final Boss
@@ -455,9 +486,6 @@ var phrase = "An apple a day keeps Alice feeling awesome!";
  
   
   
-
-
-
 
 
 
