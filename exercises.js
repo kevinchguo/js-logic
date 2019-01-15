@@ -463,9 +463,11 @@ console.log(east)
 
 function subways(special){
   for(i = 0; i < special.length; i++)
-    if(i%2 === 0){
-      return special
+    if(i%2 === 1){
+      special[i] = 'Classic Tuna'
+      // special.splice(i, 2, 'Classic Tuna')
     }
+    return special
 }
 subways(subOftheDay);
 console.log(subOftheDay)
@@ -483,9 +485,19 @@ Final Boss
 */
 
 var phrase = "An apple a day keeps Alice feeling awesome!";
+var noAs = []
  
-  
-  
+function removeLetter(str){
+  var phraseArr = str.split('');
+  for(i = 0; i < phraseArr.length; i++){
+    if(phraseArr[i] !== 'A' && phraseArr[i] !== 'a'){
+      noAs.push(phraseArr[i])
+    }
+  }
+  return phraseArr
+} 
+removeLetter(phrase)
+console.log(noAs.join(''))
 
 
 
