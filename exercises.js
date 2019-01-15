@@ -473,7 +473,7 @@ subways(subOftheDay);
 console.log(subOftheDay)
 
 /*
-Final Boss
+Final Final Boss
  * #20
  * Function - removeLetter
  * Create a function named `removeLetter`, which takes a parameter `str`. 
@@ -498,10 +498,5 @@ function removeLetter(str){
 } 
 removeLetter(phrase)
 console.log(noAs.join(''))
-
-
-
-
-
 
 
